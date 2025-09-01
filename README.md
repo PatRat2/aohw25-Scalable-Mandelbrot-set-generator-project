@@ -29,13 +29,13 @@ InStopY = [1,1.12]<br/>
 
 <br/>
 <br/>
-To get the resulting image in the Matlab environment:
-step1 = horzcat(out.ITER.Data, out.VALID.Data)
-step2 = step1(step1(:,2) == 1, :)
-step3 = reshape(step2(:,1),101,101)
-imagesc(step3')
-
+To get the resulting image in the Matlab environment:<br/>
+step1 = horzcat(out.ITER.Data, out.VALID.Data)<br/>
+step2 = step1(step1(:,2) == 1, :)<br/>
+step3 = reshape(step2(:,1),101,101)<br/>
+imagesc(step3')<br/>
 <br/>
-For running the Jupyter notebook, upload it, and the .bit and .hwh file to the same directory
-
+<br/>
+For running the Jupyter notebook, upload it, and the .bit and .hwh file to the same directory<br/>
+<br/>
 When compiling the system in vivado, the S2MM_LENGTH register in the AXI DMA IP core needs to be set to ~14 bits for large images
